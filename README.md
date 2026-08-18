@@ -1,22 +1,35 @@
-# Models-Generator
-The primary goal of this project is to automate the creation of Go structs based on YAML models. By expressing data structures in a declarative YAML format, developers can harness the simplicity of the Go language without engaging in the manual, error-prone process of writing repetitive code. A key feature is the introduction of a make generate command, which transforms YAML models into Go structs, effectively streamlining the development process.
+# models-generator
+
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/models-generator) [![KDE Eco](https://img.shields.io/badge/KDE%20Eco-certified-brightgreen?logo=kde&logoColor=white&style=flat-square)](https://eco.kde.org/) [![Blue Angel](https://img.shields.io/badge/Blue%20Angel-DE--UZ%20215-0055a4?style=flat-square)](https://www.blauer-engel.de/en/certification/criteria) [![Energy](https://api.green-coding.io/v1/ci/badge/get?repo=Interested-Deving-1896%2Fmodels-generator&branch=main&workflow=eco-audit.yml)](https://metrics.green-coding.io/ci-index.html)
 
 
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-## Features
-* Automated Struct Generation: Express data models in YAML, and utilize the make generate command to automatically generate corresponding Go structs.
+## Architecture
 
-* Synchronization with TypeScript Definitions: Recognizing the significance of collaboration between frontend and backend teams, the project introduces a make sync command. This command goes beyond code generation, synchronizing the generated Go structs with TypeScript definitions.
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-* Bidirectional Synchronization: Ensure changes to data models are reflected in both backend Go code and frontend TypeScript code without manual intervention, fostering a seamless development environment.
+## Install
+
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
+
+```bash
+git clone https://github.com/Interested-Deving-1896/models-generator.git
+cd models-generator
+```
 
 ## Usage
+
 
 Define YAML Models
 ```yaml
 models:
   Student:
-    Classes: 
+    Classes:
         type: "list"
         itemType: "string"
     Grade:
@@ -30,7 +43,7 @@ models:
             type: "list"
             itemType: "Address"
   Address:
-        City: 
+        City:
             type: "string"
         Country:
             type: "string"
@@ -45,9 +58,67 @@ To synchronize the generated Go structs with TypeScript definitions, use the fol
 ```makefile
 make sync
 ```
-## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+## Configuration
 
-Please make sure to update tests as appropriate.
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/models-generator`](https://github.com/Interested-Deving-1896/models-generator) and mirrored through:
+
+```
+Interested-Deving-1896/models-generator  ──►  OpenOS-Project-OSP/models-generator  ──►  OpenOS-Project-Ecosystem-OOC/models-generator
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream influences recorded._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## Accessibility
+
+<!-- AI:start:accessibility -->
+This repo uses automated accessibility auditing via `check-accessibility.yml`.
+
+Checks include: CODEOWNERS ownership coverage, README screen-reader compatibility,
+WCAG 2.1 AA HTML compliance, audio overview (espeak-ng), and Braille output (liblouis).
+
+
+
+
+Run the [Check Accessibility](https://github.com/Interested-Deving-1896/models-generator/actions/workflows/check-accessibility.yml)
+workflow to generate the first report and accessibility artifacts.
+See [DOCS/accessibility.md](https://github.com/Interested-Deving-1896/models-generator/blob/main/DOCS/accessibility.md) for the full reference.
+<!-- AI:end:accessibility -->
+
+## License
+
+<!-- AI:start:license -->
+<!-- License not detected — add a LICENSE file to this repo. -->
+<!-- AI:end:license -->
